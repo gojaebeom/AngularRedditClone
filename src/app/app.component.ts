@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+import { Article } from './article/article.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-reddit-clone';
+  
+  articles:Article[];
+
+
+  constructor()
+  {
+    this.articles = [
+      new Article('Angular','https://angular.kr/', 32),
+      new Article('React', 'https://ko.reactjs.org/', 40),
+      new Article('Vue', 'https://kr.vuejs.org/', 20),
+    ]
+  }
+
+  addArticle(title:HTMLInputElement, link:HTMLInputElement)
+  {
+    this.articles.push(new Article(title.value , link.value, 0));
+    title.value = '';
+    link.value = '';
+  }
 }

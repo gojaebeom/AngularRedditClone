@@ -1,0 +1,21 @@
+<article class="article-container">
+    
+    <div class="point-container">
+        <h1>{{article.likeCount}}</h1>
+        <span>point</span>
+    </div>
+
+    <div class="content-container">
+
+        <h2 class="title">
+            <a href="{{article.link}}" target="_blank">
+                {{article.title}}
+            </a>
+        </h2>
+        
+        <div class="like-container">
+            <a href class="like" (click)="like()">좋아요😍</a>
+            <a href class="unlike" (click)="unlike()">싫어요😥</a>
+        </div>
+    </div>
+</article>

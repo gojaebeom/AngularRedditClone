@@ -1,0 +1,67 @@
+.app-container
+{
+    overflow: hidden;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+
+    .header
+    {
+        width:100%;
+        background:blueviolet;
+        text-align:center;
+        padding:10px;
+        font-size:30px;
+        color:white;
+    }
+
+    .add-container
+    {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        width:500px;
+        border:1px solid #D8D8D8;
+        border-radius:3px;
+        padding:10px;
+        margin-top:40px;
+        margin-bottom:20px;
+
+        
+        input
+        {
+            width:90%;
+            padding:10px 10px;
+            margin:15px;
+            border:1px solid #D8D8D8;
+            border-radius:3px;
+        }
+
+        .btn-container
+        {
+            
+            display:flex;
+            width:95%;
+            justify-content:flex-end;
+            margin-top:10px;
+            margin-bottom:10px;
+
+            button
+            {
+                border:none;
+                border-radius:3px;
+                padding:10px 20px;
+                background:blueviolet;
+                color:white;
+            }
+        }
+    }
+
+    footer
+    {
+        margin-top:100px;
+    }
+}
